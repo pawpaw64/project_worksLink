@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="1160.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_workslink.HomePageController">
+    <children>
+        <BorderPane layoutX="331.0" layoutY="159.0" prefHeight="660.0" prefWidth="1160.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <left>
+                <Pane prefHeight="660.0" prefWidth="91.0" styleClass="gradiant" stylesheets="@homePageDesign.css" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="54.0" fitWidth="55.0" layoutX="16.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/user%20(1).png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="56.0" fitWidth="46.0" layoutX="15.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/settings.png" />
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="65.0" fitWidth="61.0" layoutX="15.0" layoutY="509.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/app.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </left>
+            <right>
+                <Pane prefHeight="660.0" prefWidth="300.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="65.0" layoutY="147.0" text="workspaceprofile">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="224.0" prefHeight="31.0" prefWidth="146.0" text="add member">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="273.0" text="view media files">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="32.0" layoutY="330.0" text="view media files">
+                            <font>
+                                <Font name="System Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="134.0" fitWidth="170.0" layoutX="83.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@icons/profile.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </right>
+            <center>
+                <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane prefHeight="660.0" prefWidth="280.0" style="-fx-background-color: #7FA97F;">
+                            <children>
+                                <TextField alignment="CENTER" layoutX="13.0" layoutY="14.0" prefHeight="42.0" prefWidth="245.0" promptText="search" styleClass="interPanes" stylesheets="@homePageDesign.css">
+                                    <cursor>
+                                        <Cursor fx:constant="TEXT" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="System Bold" size="27.0" />
+                                    </font>
+                                </TextField>
+                                <Accordion layoutX="13.0" layoutY="193.0" />
+                                <TitledPane alignment="TOP_LEFT" layoutX="-1.0" layoutY="71.0" prefHeight="593.0" prefWidth="274.0" style="-fx-content-display: left to right;" text="Add Projects" textAlignment="CENTER">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="557.0" prefWidth="219.0" style="-fx-background-color: white;" />
+                                    </content>
+                                    <font>
+                                        <Font size="18.0" />
+                                    </font>
+                                </TitledPane>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="10.0" layoutY="10.0" prefHeight="660.0" prefWidth="510.0" style="-fx-background-color: #2FFFFF;">
+                            <children>
+                                <TextArea layoutX="11.0" layoutY="591.0" prefHeight="44.0" prefWidth="469.0" />
+                                <AnchorPane layoutX="17.0" layoutY="8.0" prefHeight="576.0" prefWidth="469.0" style="-fx-background-color: white;" />
+                            </children>
+                        </Pane>
+                    </children>
+                </HBox>
+            </center>
+        </BorderPane>
+    </children>
+</AnchorPane>
